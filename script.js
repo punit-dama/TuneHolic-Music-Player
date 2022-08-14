@@ -181,34 +181,6 @@ Array.from(document.getElementsByClassName("playSong")).forEach((element) => {
   });
 });
 
-// Array.from(document.getElementsByClassName("playSong")).forEach((element) => {
-//   element.addEventListener("click", (p) => {
-//     songIndex = parseInt(p.target.id);
-//     if ((audioElement.play() == True)){
-//       audioElement.pause();
-//       p.target.classList.remove("fa-pause-circle");
-//       p.target.classList.add("fa-play-circle");
-//       gif.style.opacity = 0;
-//       masterPlay.classList.remove("fa-pause-circle");
-//       masterPlay.classList.add("fa-play-circle");}
-//     else{
-//       makeAllPlays();
-//     songIndex = parseInt(p.target.id);
-//     p.target.classList.remove("fa-play-circle");
-//     p.target.classList.add("fa-pause-circle");
-//     audioElement.src = `songs/${songIndex + 1}.mp3`;
-//     masterSongName.innerText = songs[songIndex].songName;
-//     audioElement.currentTime = 0;
-//     audioElement.play();
-//     gif.style.opacity = 1;
-//     masterPlay.classList.remove("fa-play-circle");
-//     masterPlay.classList.add("fa-pause-circle");
-//     }
-//     });
-// });
-
-
-
 
 document.getElementById("next").addEventListener("click", () => {
   if (songIndex >= 22) {
